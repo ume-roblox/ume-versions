@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
-	"label": "vscode_extension",
+	"label": "roblox_extension",
 	"message": "1.0.0",
-	"color": "blue",
+	"color": "crimson",
 	"style": "for-the-badge"
 }
