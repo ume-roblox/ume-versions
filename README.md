@@ -2,7 +2,7 @@
 
 <h1>Ume Versions</h1>
 
-<p><strong>Current versions of Ume repositories</strong></p>
+<p><b>Current versions of Ume repositories</b></p>
 
 [![Framework][framework-badge]][framework-url]
 [![Docs][docs-badge]][docs-url]
