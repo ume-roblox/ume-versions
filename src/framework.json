@@ -1,7 +1,11 @@
 {
+	"schemaVersion": 1,
 	"label": "Ume Framework",
-	"version": "1.3.0",
-	"icon": "cube",
-	"status": "stable",
-	"color": "blue"
+	"message": "1.3.0",
+	"color": "blue",
+	"labelColor": "grey",
+	"namedLogo": "cube",
+	"logoColor": "red",
+	"logoSize": "auto",
+	"style": "for-the-badge"
 }
