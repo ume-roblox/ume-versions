@@ -6,7 +6,7 @@
 
 ![Framework](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ume-roblox/ume-versions/refs/heads/main/src/framework.json)
 ![Docs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ume-roblox/ume-versions/refs/heads/main/src/docs.json)
-
+<br>
 ![VSCode Extension](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ume-roblox/ume-versions/refs/heads/main/src/vscode-extension.json)
 ![Roblox Extension](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ume-roblox/ume-versions/refs/heads/main/src/roblox-extension.json)
 
