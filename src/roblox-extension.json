@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"label": "roblox extension",
+	"label": "roblox plugin",
 	"message": "1.1.0",
 	"color": "crimson",
 	"style": "for-the-badge"
