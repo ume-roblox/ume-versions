@@ -5,7 +5,6 @@
 <p><b>Current versions of Ume repositories</b></p>
 
 [![Framework][framework-badge]][framework-url]
-<br>
 [![VSCode Extension][vscode-extension-badge]][vscode-extension-url]
 [![Roblox Extension][roblox-extension-badge]][roblox-extension-url]
 
