@@ -20,3 +20,13 @@
 [roblox-extension-url]: https://github.com/ume-roblox/ume-rbx
 [lsp-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ume-roblox/ume-versions/refs/heads/main/src/lsp.json
 [lsp-url]: https://github.com/ume-roblox/ume-lsp
+
+---
+
+<div align="center">
+
+**Ume is released under a custom [licence](LICENSE.md)**
+<br>
+Maintained with 😭 by <b>Nari</b>
+
+</div>
