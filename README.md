@@ -5,8 +5,10 @@
 <p><b>Current versions of Ume repositories</b></p>
 
 [![Framework][framework-badge]][framework-url]
-[![VSCode Extension][vscode-extension-badge]][vscode-extension-url]
 [![Roblox Extension][roblox-extension-badge]][roblox-extension-url]
+<br>
+[![VSCode Extension][vscode-extension-badge]][vscode-extension-url]
+[![LSP][lsp-badge]][lsp-url]
 
 </div>
 
@@ -16,3 +18,5 @@
 [vscode-extension-url]: https://github.com/ume-roblox/ume-vscode
 [roblox-extension-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ume-roblox/ume-versions/refs/heads/main/src/roblox-extension.json
 [roblox-extension-url]: https://github.com/ume-roblox/ume-rbx
+[lsp-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ume-roblox/ume-versions/refs/heads/main/src/lsp.json
+[lsp-url]: https://github.com/ume-roblox/ume-lsp
