@@ -28,7 +28,7 @@
 | | Repository | |
 | --- | --- | --- |
 | **Ume** | [ume](https://github.com/ume-roblox/ume) | A lightweight Luau framework for Roblox games: modules, tagged components, checked remotes, saved player data, and UmeGui for guis as tables |
-| **Ume LSP** | [ume-lsp](https://github.com/ume-roblox/ume-lsp) | A Luau language server for VS Code: completion, types and diagnostics that know the Roblox API and your Rojo project |
+| **Ume LSP** | [ume-lsp](https://github.com/ume-roblox/ume-lsp) | A Luau language server for VS Code: completion, types and diagnostics that know the Roblox API and your project's instance tree |
 | **Ume VSCode** | [ume-vscode](https://github.com/ume-roblox/ume-vscode) | The Ume and Ume Light themes, Luau snippets, and commands that write modules, components and data files from templates |
 | **UmeSync** | [ume-sync](https://github.com/ume-roblox/ume-sync) | A tray app that syncs project folders into Studio: Rojo-compatible, many projects into many Studios, with MCP for agents |
 | **Ume Roblox** | [ume-rbx](https://github.com/ume-roblox/ume-rbx) | One Studio plugin: live sync with a review of every change, UmeGui, scene tools and a Team Create session lock |
@@ -43,7 +43,7 @@
 4. **Finish in Studio.** Ume Roblox's Sync tool connects to the hub, shows what will change and keeps the place in step.
    Its other tools take care of guis, lighting, tags, pictures and avatars.
 
-Most pieces work on their own too: the framework with Rojo, Ume LSP in any Luau workspace, the plugin's gui and scene
+Most pieces work on their own too: the framework with any Rojo-compatible sync, Ume LSP in any Luau workspace, the plugin's gui and scene
 tools without the app.
 
 ## Version badges
