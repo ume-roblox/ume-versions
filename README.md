@@ -28,7 +28,8 @@
 | | Repository | |
 | --- | --- | --- |
 | **Ume** | [ume](https://github.com/ume-roblox/ume) | A lightweight Luau framework for Roblox games: modules, tagged components, checked remotes and saved player data |
-| **Ume Gui** | [ume-gui](https://github.com/ume-roblox/ume-gui) | UmeGui, guis as tables, and the template every game's gui repo is cloned from: a game is `<game>` and `<game>-gui`, synced side by side |
+| **Ume Gui** | [ume-gui](https://github.com/ume-roblox/ume-gui) | UmeGui, guis as tables: a theme for every look, previews and exports in Studio, at every device size |
+| **New Project** | [new-project](https://github.com/ume-roblox/new-project) | The template for a new game: one repo whose setup copies Ume and Ume Gui into `<game>-game` and `<game>-gui` |
 | **Ume LSP** | [ume-lsp](https://github.com/ume-roblox/ume-lsp) | A Luau language server for VS Code: completion, types and diagnostics that know the Roblox API and your project's instance tree |
 | **Ume VSCode** | [ume-vscode](https://github.com/ume-roblox/ume-vscode) | The Ume and Ume Light themes, Luau snippets, and commands that write modules, components and data files from templates |
 | **UmeSync** | [ume-sync](https://github.com/ume-roblox/ume-sync) | A tray app that syncs project folders into Studio: Rojo-compatible, many projects into many Studios, with MCP for agents |
@@ -37,7 +38,8 @@
 ## How it fits together
 
 1. **Build on Ume.** Every module, component and data file has its place, and they all start in one order on the server
-   and the client. The game's guis live next to it in a clone of Ume Gui.
+   and the client. A game starts from New Project, which puts the game's code and its guis (a copy of Ume Gui) side
+   by side in one repo.
 2. **Write in VS Code.** Ume LSP completes and checks your Luau as you type. Ume VSCode makes new modules, components
    and data files in the framework's layout.
 3. **Sync with UmeSync.** Add the project folder once; it serves every project from one local hub.

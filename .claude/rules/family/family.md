@@ -2,20 +2,21 @@
 
 *Shared rule: an identical copy sits in `.claude/rules/family/` of every ume repo. Change all copies together (Shared files, below).*
 
-The family is eight sibling repos, checked out next to each other under `A:\Projects\Roblox\ume`:
+The family is nine sibling repos, checked out next to each other under `A:\Projects\Roblox\ume`:
 
 | Repo | What it is | Stack |
 | --- | --- | --- |
 | `ume` | The Roblox game framework every game starts from: modules, libraries, components, checked remotes, saved data, all reached through `I` | Luau |
-| `ume-gui` | UmeGui, guis written as tables, and the template every `<game>-gui` repo is cloned from | Luau |
-| `ume-rbx` | The Ume Roblox Studio plugin (Sync, Gui, TagList+ and other tools). Vendors a copy of ume-gui for its widgets | Luau |
+| `ume-gui` | UmeGui, guis written as tables, and the engine every game's `<game>-gui` folder is copied from | Luau |
+| `new-project` | The template every new game repo is made from: its setup copies ume and ume-gui into the game's two folders | PowerShell, Markdown |
+| `ume-rbx` | The Ume Roblox Studio plugin (Sync, Gui, TagList+ and other tools). Builds its widgets on a copy of ume-gui | Luau |
 | `ume-sync` | UmeSync, the tray app and local hub that syncs project folders into Studio, one way, with an MCP server for agents | Rust, Tauri, Svelte |
 | `ume-lsp` | The Luau language server, shipped as a VS Code extension and also run headless by ume-sync | TypeScript, Lua |
 | `ume-vscode` | The VS Code extension: themes, snippets, the Create and Extract commands, the author stamp | TypeScript |
 | `ume-versions` | The family's public front page and the version badges | Markdown, JSON, SVG |
 | `.github-private` | The organisation's members-only profile page | Markdown, SVG |
 
-A game is two more repos side by side: `<game>`, made from `ume`, and `<game>-gui`, a clone of `ume-gui`. Both sync into the same place.
+A game is one more repo, made from `new-project`: `<game>-game` (a copy of ume) and `<game>-gui` (a copy of ume-gui), two UmeSync projects in one category, both syncing into `<game>.rbxl`.
 
 ## Boundaries
 
@@ -42,8 +43,10 @@ Some files are identical copies in several repos:
 
 | Files | Repos |
 | --- | --- |
-| `.claude/rules/family/*` | all eight |
+| `.claude/rules/family/*` | every repo except new-project |
 | `.claude/rules/luau/*`, `.claude/skills/readme/*` | ume, ume-rbx, ume-gui |
+
+new-project has no family rules of its own: a game made from it carries them inside its two folders.
 
 Change one copy, then make the same change to every other copy in the same piece of work. Copies may differ only in line endings (ume-lsp uses CRLF). To list the files whose copies differ, from `A:\Projects\Roblox\ume` in PowerShell:
 
