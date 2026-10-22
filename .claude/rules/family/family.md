@@ -2,7 +2,7 @@
 
 *Shared rule: an identical copy sits in `.claude/rules/family/` of every ume repo. Change all copies together (Shared files, below).*
 
-The family is nine sibling repos, checked out next to each other under `A:\Projects\Roblox\ume`:
+The family is nine sibling repos, checked out next to each other in one parent folder, so each reaches the others as `../<repo>`:
 
 | Repo | What it is | Stack |
 | --- | --- | --- |
@@ -48,7 +48,7 @@ Some files are identical copies in several repos:
 
 new-project has no family rules of its own: a game made from it carries them inside its two folders.
 
-Change one copy, then make the same change to every other copy in the same piece of work. Copies may differ only in line endings (ume-lsp uses CRLF). To list the files whose copies differ, from `A:\Projects\Roblox\ume` in PowerShell:
+Change one copy, then make the same change to every other copy in the same piece of work. Copies may differ only in line endings (ume-lsp uses CRLF). To list the files whose copies differ, from the parent folder in PowerShell:
 
 ```powershell
 Get-ChildItem */.claude/rules/family/*, */.claude/rules/luau/*, */.claude/skills/readme/* -File | Group-Object Name | Where-Object { ($_.Group | ForEach-Object { (Get-Content -Raw $_.FullName) -replace "`r" } | Select-Object -Unique).Count -gt 1 } | ForEach-Object Name
